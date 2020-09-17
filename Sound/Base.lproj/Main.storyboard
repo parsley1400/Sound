@@ -17,9 +17,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcH-ZW-ftb">
                                 <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <state key="normal" image="drumPlayingImage"/>
+                                <state key="normal" image="drumImage"/>
                                 <connections>
-                                    <action selector="tapDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNh-VP-lIe"/>
+                                    <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="BNX-sO-HIo"/>
+                                    <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXz-Z7-5cp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -30,6 +31,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="drumButton" destination="EcH-ZW-ftb" id="22V-TE-cIO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drumPlayingImage" width="200" height="200"/>
+        <image name="drumImage" width="200" height="200"/>
     </resources>
 </document>
